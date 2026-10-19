@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8e7e5">
+  <title>A Little Surprise for Sana ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="bgMusic" src="music.mp3" loop preload="none"></audio>
+  <button class="music-toggle" id="musicToggle" aria-label="Toggle background music" title="Music on/off">♫ <span id="musicLabel">Music</span></button>
+
+  <main class="app">
+    <section class="welcome screen active" id="welcomeScreen">
+      <div class="paper-tape tape-one"></div><div class="paper-tape tape-two"></div>
+      <div class="tiny-flower flower-one">✿</div><div class="tiny-flower flower-two">✿</div>
+      <p class="eyebrow">a little something made with love</p>
+      <h1>Hey,<br><span>Sana</span><i>♡</i></h1>
+      <p class="welcome-copy">A tiny scrapbook of memories,<br>smiles, and all the little things<br>that make you <em>you</em>.</p>
+      <div class="envelope" aria-hidden="true"><div class="envelope-heart">♡</div><div class="envelope-note">open when<br>you're ready</div></div>
+      <button class="primary-btn" id="startBtn">Open your surprise <span>♡</span></button>
+      <p class="bottom-note">made just for you · with lots of love</p>
+    </section>
+
+    <section class="memory screen" id="memoryScreen" aria-live="polite">
+      <header class="memory-header">
+        <button class="round-btn" id="homeBtn" aria-label="Back to welcome">←</button>
+        <div class="progress-wrap"><span id="photoCounter">01 / 08</span><div class="progress-track"><div id="progressBar"></div></div></div>
+        <button class="round-btn" id="musicToggleSmall" aria-label="Toggle music">♫</button>
+      </header>
+      <div class="memory-content">
+        <p class="eyebrow" id="memoryEyebrow">little memory no. 01</p>
+        <div class="polaroid" id="polaroid">
+          <div class="photo-frame"><img id="memoryPhoto" src="images/1.svg" alt="A memory with Sana"></div>
+          <span class="photo-sticker" id="photoSticker">♡</span>
+          <p class="photo-label" id="photoLabel">one for the memory book</p>
+        </div>
+        <div class="caption-paper">
+          <span class="caption-sparkle">✳</span>
+          <p id="memoryCaption">Some people make ordinary days feel special. You're one of them.</p>
+        </div>
+        <div class="memory-actions"><p class="memory-hint" id="memoryHint">take your time — there's more ♡</p><button class="slideshow-btn" id="slideshowBtn" type="button">▶ Play slideshow</button></div>
+      </div>
+      <footer class="memory-footer">
+        <button class="nav-btn" id="prevBtn" aria-label="Previous photo">←</button>
+        <div class="dots" id="dots" aria-label="Photo progress"></div>
+        <button class="nav-btn next-btn" id="nextBtn" aria-label="Next photo">→</button>
+      </footer>
+    </section>
+
+    <section class="final screen" id="finalScreen">
+      <div class="paper-tape tape-final"></div>
+      <div class="final-flower">✿</div>
+      <p class="eyebrow">today is all about you</p>
+      <h2>Happy Birthday,<br><span>Sana!</span> <i>♡</i></h2>
+      <div class="cake" aria-hidden="true">🎂</div>
+      <div class="letter">
+        <p>To my favorite person,</p>
+        <p>Thank you for the laughs, the little moments, the random talks, and the memories I’ll always keep close. Life is brighter with you in it.</p>
+        <p>I hope this new year brings you gentle days, big dreams, unexpected happiness, and all the love you deserve. Never forget how special you are.</p>
+        <p class="signoff">With lots of love,<br><span>your forever friend ♡</span></p>
+      </div>
+      <button class="primary-btn" id="replayBtn">Relive our little memories ↻</button>
+      <p class="bottom-note">the best chapters are still ahead ✨</p>
+      <div class="confetti" id="confetti" aria-hidden="true"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
